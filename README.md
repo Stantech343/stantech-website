@@ -1,2 +1,2 @@
 # stantech-website
-rather not say
+ Visit the Stantech website
