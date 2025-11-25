@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Stantech — AI · Web · Agritech</title>
+  <meta name="description" content="Stantech — AI, web & agritech solutions. Built for startups and farms. Services: AI automation, web dev, branding, agritech tools." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0f12;
+      --card:#0f1720;
+      --muted:#99a0aa;
+      --accent:#6ee7b7;
+      --glass: rgba(255,255,255,0.03);
+      --maxw:1100px;
+      --radius:14px;
+      --mono: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;font-family:var(--mono);background:linear-gradient(180deg,#071019 0%,var(--bg) 100%);color:#e6eef3;line-height:1.5;-webkit-font-smoothing:antialiased;padding:32px 20px;
+    }
+    .container{max-width:var(--maxw);margin:0 auto}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:32px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:48px;height:48px;background:linear-gradient(135deg,var(--accent),#3dd6ff);border-radius:10px;display:grid;place-items:center;font-weight:800;color:#021;}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+    nav a:hover{color:var(--accent)}
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:center;margin-bottom:40px}
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:28px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+    h1{font-size:32px;margin:0 0 10px}
+    p.lead{color:var(--muted);margin:0 0 18px}
+    .cta-row{display:flex;gap:12px}
+    .btn{background:var(--accent);color:#021;padding:10px 14px;border-radius:10px;border:0;font-weight:700;cursor:pointer}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+    /* services */
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:36px}
+    .card{background:var(--card);padding:18px;border-radius:12px}
+    .card h3{margin-top:0}
+    .features{display:flex;flex-direction:column;gap:8px;margin-top:10px;color:var(--muted)}
+
+    /* about */
+    .about{display:flex;gap:20px;align-items:center;margin-bottom:36px}
+    .about .text{flex:1}
+    .about .stats{background:var(--glass);padding:16px;border-radius:12px}
+
+    /* contact */
+    footer{margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,0.03);display:flex;justify-content:space-between;align-items:center}
+    .contact-grid{display:grid;grid-template-columns:1fr 300px;gap:16px}
+    .socials{display:flex;gap:10px}
+
+    /* responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .services{grid-template-columns:1fr 1fr}
+      .contact-grid{grid-template-columns:1fr}
+    }
+    @media (max-width:520px){
+      .services{grid-template-columns:1fr}
+      nav a{display:none}
+      header{flex-direction:column;align-items:flex-start;gap:12px}
+    }
+
+    /* small helpers */
+    .muted{color:var(--muted)}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.03);font-weight:600}
+    .service-icon{width:46px;height:46px;border-radius:10px;background:rgba(255,255,255,0.02);display:grid;place-items:center;margin-right:12px}
+
+    /* nav mobile */
+    .mobile-menu{display:none}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">S</div>
+        <div>
+          <div style="font-weight:800">Stantech</div>
+          <div style="font-size:12px;color:var(--muted)">AI · Web · Agritech</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero-card hero">
+        <div>
+          <h1>Build smarter. Grow faster. Ship faster.</h1>
+          <p class="lead">Stantech designs AI-driven tools, modern websites and agritech solutions that help small businesses and farms digitize operations — fast and affordably.</p>
+          <div class="cta-row">
+            <button class="btn" onclick="location.href='#contact'">Get a free consult</button>
+            <button class="btn ghost" onclick="location.href='#services'">Explore services</button>
+          </div>
+
+          <div style="margin-top:18px;display:flex;gap:14px;align-items:center">
+            <div class="pill">No-code & low-cost</div>
+            <div class="pill">Built for Kenyan startups</div>
+            <div class="pill">Dark-mode friendly</div>
+          </div>
+
+          <div style="margin-top:18px;color:var(--muted)">
+            <strong>Trusted by:</strong> <span class="muted">Small farms • Startups • Students</span>
+          </div>
+        </div>
+
+        <aside class="hero-card" style="padding:18px">
+          <h3 style="margin-top:0">Quick project starter</h3>
+          <p class="muted">Want a website, a crop-disease detector, or a simple automation? We can spin a demo in 3–7 days.</p>
+          <ul class="muted" style="padding-left:18px">
+            <li>Landing page + contact form</li>
+            <li>Simple AI model demo (image classifier)</li>
+            <li>Logo & brand kit</li>
+          </ul>
+          <div style="margin-top:12px">
+            <a class="btn" href="mailto:hello@stantech.example?subject=Website%20Inquiry">Email us</a>
+            <a class="btn ghost" href="https://wa.me/254700000000?text=Hi%20Stantech%20I%20need%20a%20website" style="margin-left:8px">WhatsApp</a>
+          </div>
+        </aside>
+      </section>
+
+      <section id="services" style="margin-top:18px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+          <h2 style="margin:0">Services</h2>
+          <div class="muted">Solutions for early-stage teams and solo founders</div>
+        </div>
+
+        <div class="services">
+          <div class="card">
+            <div style="display:flex;align-items:center">
+              <div class="service-icon">🤖</div>
+              <div>
+                <h3>AI Automation</h3>
+                <div class="muted">Chatbots, workflows & prediction tools</div>
+              </div>
+            </div>
+            <div class="features">
+              <div>Prototype with open-source tools</div>
+              <div>Cost-focused deployment</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div style="display:flex;align-items:center">
+              <div class="service-icon">🌾</div>
+              <div>
+                <h3>Agritech Tools</h3>
+                <div class="muted">Crop-disease detection & advisory</div>
+              </div>
+            </div>
+            <div class="features">
+              <div>Image-based diagnosis</div>
+              <div>Localized crop tips</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div style="display:flex;align-items:center">
+              <div class="service-icon">💻</div>
+              <div>
+                <h3>Web & Mobile</h3>
+                <div class="muted">Fast landing pages & progressive web apps</div>
+              </div>
+            </div>
+            <div class="features">
+              <div>SEO-ready pages</div>
+              <div>Responsive & dark-mode</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div style="display:flex;align-items:center">
+              <div class="service-icon">🎨</div>
+              <div>
+                <h3>Branding & Logo</h3>
+                <div class="muted">Logo, colors & social assets</div>
+              </div>
+            </div>
+            <div class="features">
+              <div>Brand kit for social</div>
+              <div>Fast turnaround</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div style="display:flex;align-items:center">
+              <div class="service-icon">📈</div>
+              <div>
+                <h3>Consulting</h3>
+                <div class="muted">Product strategy & growth</div>
+              </div>
+            </div>
+            <div class="features">
+              <div>Roadmaps & MVP planning</div>
+              <div>Low-cost growth tactics</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div style="display:flex;align-items:center">
+              <div class="service-icon">⚙️</div>
+              <div>
+                <h3>No-code Apps</h3>
+                <div class="muted">Build apps & games without code</div>
+              </div>
+            </div>
+            <div class="features">
+              <div>Adapts to tight budgets</div>
+              <div>Deploy to web & PWA</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" style="margin-top:30px" class="about">
+        <div class="text">
+          <h2>About Stantech</h2>
+          <p class="muted">Stantech is a student-founded tech studio building practical AI and web solutions for Kenyan startups and farms. We focus on fast prototypes, affordability, and real results.</p>
+          <p class="muted">Founder: <strong>Stanley</strong> — student, builder and founder of Stantech. The goal is simple: help small teams ship useful tech quickly using open-source tools and low-code platforms.</p>
+        </div>
+        <div class="stats">
+          <div style="font-weight:800;font-size:20px">Why work with us</div>
+          <ul class="muted" style="padding-left:18px;margin-top:8px">
+            <li>Student pricing & mentorship</li>
+            <li>Fast prototypes (3–7 days)</li>
+            <li>Local context for Kenyan farmers</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" style="margin-top:18px">
+        <h2>Contact</h2>
+        <div class="contact-grid" style="margin-top:10px">
+          <div>
+            <p class="muted">Ready to start? Send a message or pick a channel below.</p>
+            <div style="margin-top:12px;font-size:14px">
+              <div><strong>Email:</strong> <a href="mailto:hello@stantech.example">hello@stantech.example</a></div>
+              <div><strong>WhatsApp:</strong> <a href="https://wa.me/254700000000?text=Hi%20Stantech">+254 700 000000</a></div>
+              <div style="margin-top:8px" class="socials">
+                <a href="#">YouTube</a>
+                <a href="#">TikTok</a>
+                <a href="#">Twitter</a>
+              </div>
+            </div>
+          </div>
+
+          <aside class="card">
+            <form id="contactForm" onsubmit="return handleForm(event)">
+              <label class="muted">Name</label>
+              <input name="name" required style="width:100%;padding:10px;margin-top:6px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit" />
+              <label class="muted" style="margin-top:10px;display:block">Email</label>
+              <input name="email" type="email" required style="width:100%;padding:10px;margin-top:6px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit" />
+              <label class="muted" style="margin-top:10px;display:block">Message</label>
+              <textarea name="message" rows="4" required style="width:100%;padding:10px;margin-top:6px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit"></textarea>
+              <div style="margin-top:10px;display:flex;gap:8px;justify-content:flex-end">
+                <button class="btn" type="submit">Send</button>
+                <button type="button" class="btn ghost" onclick="location.href='https://wa.me/254700000000?text=Hi%20Stantech%20I%20need%20help'">Chat on WhatsApp</button>
+              </div>
+              <div id="formStatus" style="margin-top:8px;color:var(--muted)"></div>
+            </form>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="muted">© Stantech — Student startup. Built with open-source tools.</div>
+      <div>
+        <a href="#about" class="muted" style="margin-right:12px">Privacy</a>
+        <a href="#contact" class="muted">Terms</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    function handleForm(e){
+      e.preventDefault();
+      const f = e.target;
+      const data = new FormData(f);
+      const name = data.get('name');
+      const email = data.get('email');
+      const msg = data.get('message');
+      const subject = encodeURIComponent('Stantech contact from ' + name);
+      const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + msg);
+      // Open default mail client as simple no-server fallback
+      window.location.href = `mailto:hello@stantech.example?subject=${subject}&body=${body}`;
+      document.getElementById('formStatus').innerText = 'Opening your mail app...';
+      return false;
+    }
+  </script>
+</body>
+</html>
